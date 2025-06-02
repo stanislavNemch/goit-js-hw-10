@@ -56,9 +56,12 @@ const options = {
     // Перевіряємо, чи обрана дата в минулому
     if (userSelectedDate < new Date()) {
       iziToast.error({
-        message: `Please choose a date in the future`,
+        message: `<span class="error-icon">
+                    <img src="./img/error-icon.svg" width="24" height="24" alt="error" />
+                  </span>
+                Please choose a date in the future`,
         position: 'topRight',
-        class: 'custom-izitoast',
+        // class: 'custom-izitoast',
         close: false,
         timeout: 3000,
       });
