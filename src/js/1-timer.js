@@ -57,7 +57,7 @@ const options = {
     if (userSelectedDate < new Date()) {
       iziToast.error({
         message: `<span class="error-icon">
-                    <img src="../img/error-icon.svg" width="24" height="24" alt="error" />
+                    <img src="img/error-icon.svg" width="24" height="24" alt="error" />
                   </span>
                 Please choose a date in the future`,
         position: 'topRight',
