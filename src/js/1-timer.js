@@ -61,7 +61,7 @@ const options = {
                   </span>
                 Please choose a date in the future`,
         position: 'topRight',
-        // class: 'custom-izitoast',
+        class: 'custom-izitoast',
         close: false,
         timeout: 3000,
       });
