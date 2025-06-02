@@ -106,32 +106,24 @@ body {
   text-align: center;
 }
 
-.iziToast-body {
-  padding-left: 20px !important;
-  margin: 0 !important;
-}
-
-.custom-izitoast .iziToast-close {
-  display: none !important;
-}
-
-.custom-izitoast {
+.custom-izitoast .iziToast-body {
+  width: 302px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   gap: 8px;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.custom-izitoast {
+  background-color: #ef4040;
   border-bottom: 2px solid #ffbebe;
   border-radius: 4px;
-  width: 302px;
-  height: 64px;
-  background-color: #ef4040;
 }
 
 .custom-izitoast .iziToast-message {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -139,6 +131,10 @@ body {
   color: #fff;
   text-align: center;
   white-space: nowrap;
+}
+
+.custom-izitoast .iziToast-close {
+  display: none !important;
 }
 
 .custom-izitoast .error-icon {
