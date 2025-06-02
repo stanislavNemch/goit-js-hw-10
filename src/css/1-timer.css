@@ -123,6 +123,8 @@ body {
   gap: 8px;
   border-bottom: 2px solid #ffbebe;
   border-radius: 4px;
+  width: 302px;
+  height: 64px;
   background-color: #ef4040;
 }
 
