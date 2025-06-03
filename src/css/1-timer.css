@@ -33,17 +33,20 @@ body {
   transition: border 0.2s, background 0.2s;
 }
 
-/* Ховер для любого состояния */
 .controls input:hover,
 .controls input:focus {
   border: 1px solid #000;
   background: #fff;
 }
 
-/* Активный режим (например, когда счетчик работает) */
 .controls input.active-timer {
-  background: #fafafa;
+  background: #fff;
   border: 1px solid #4e75ff;
+}
+
+.controls input:disabled {
+  background: #fafafa;
+  cursor: not-allowed;
 }
 
 .controls button {
