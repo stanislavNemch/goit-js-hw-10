@@ -107,6 +107,8 @@ body {
 }
 
 .custom-izitoast .iziToast-body {
+  padding-left: 20px !important;
+  margin: 0 !important;
   width: 302px;
   height: 64px;
   display: flex;
@@ -124,6 +126,9 @@ body {
 }
 
 .custom-izitoast .iziToast-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
