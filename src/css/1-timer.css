@@ -117,6 +117,7 @@ body {
   gap: 8px;
   padding: 0 20px;
   margin: 0;
+  white-space: nowrap;
 }
 
 .custom-izitoast {
@@ -135,7 +136,6 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
 }
 
 .custom-izitoast .iziToast-close {
