@@ -40,25 +40,35 @@
   margin-top: 25px;
   margin-bottom: 25px;
   background-color: #f8fafc;
+  /* Зміни для розташування радіокнопок в один рядок */
+  display: flex; /* Робимо fieldset гнучким контейнером */
+  justify-content: space-around; /* Розподіляємо елементи рівномірно */
+  align-items: center; /* Вирівнюємо по центру по вертикалі */
 }
 /* Стилі для легенди fieldset */
 .form legend {
   font-weight: 600;
   color: #1e293b;
   padding: 0 10px;
-  margin-left: -10px;
+  /* Змінено для позиціонування слова "Стан" */
+  position: absolute; /* Виносимо легенду з потоку flex-контейнера */
+  top: -10px; /* Піднімаємо її над рамкою fieldset */
+  left: 28px; /* Відступ від лівого краю */
+  background-color: #f8fafc; /* Фон для легенди, щоб приховати рамку */
+  padding: 0 8px;
   font-size: 1.1rem;
 }
 /* Стилі для міток всередині fieldset */
 .form fieldset label {
-  display: flex;
+  display: flex; /* Залишаємо flex для вирівнювання тексту та радіокнопки */
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0; /* Видаляємо нижній відступ, оскільки вони тепер в рядку */
   cursor: pointer;
+  margin-right: 20px; /* Додаємо відступ між радіокнопками */
 }
-/* Видалення нижнього відступу для останньої мітки в fieldset */
+/* Видалення правого відступу для останньої мітки в fieldset */
 .form fieldset label:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 /* Стилі для радіокнопок */
 .form input[type='radio'] {
