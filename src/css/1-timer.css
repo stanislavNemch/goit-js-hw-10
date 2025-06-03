@@ -110,13 +110,11 @@ body {
   padding-left: 20px !important;
   margin: 0 !important;
   width: 302px;
-  height: 64px;
+  min-height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 0 20px;
-  margin: 0;
   white-space: nowrap;
 }
 
@@ -138,7 +136,9 @@ body {
   text-align: center;
   white-space: nowrap;
   width: 100%;
+  flex-wrap: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .custom-izitoast .iziToast-close {
