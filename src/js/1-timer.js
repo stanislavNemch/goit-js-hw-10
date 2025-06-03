@@ -59,6 +59,7 @@ const options = {
         message: `<div class="error-icon"></div>Please choose a date in the future`,
         position: 'topRight',
         class: 'custom-izitoast',
+        progressBar: false, // Вимикаємо індикатор прогресу
         close: false,
         timeout: 3000,
       });
@@ -90,6 +91,7 @@ startButton.addEventListener('click', () => {
         title: 'Success',
         message: 'Countdown finished!',
         position: 'topRight',
+        progressBar: false, // Вимикаємо індикатор прогресу
         close: false,
         timeout: 3000,
       });

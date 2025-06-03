@@ -11,22 +11,28 @@
 
 <body>
     <div class="form-container">
-        <form class="feedback-form" autocomplete="off">
-            <div class="form-group">
+        <form class="form">
+            <label>
+                Delay (ms)
+                <input type="number" name="delay" required min="0" />
+            </label>
+
+            <fieldset>
+                <legend>State</legend>
                 <label>
-                    Email
-                    <input type="email" name="email" autofocus />
+                    <input type="radio" name="state" value="fulfilled" required />
+                    Fulfilled
                 </label>
-            </div>
-            <div class="form-group">
                 <label>
-                    Message
-                    <textarea name="message" rows="8"></textarea>
+                    <input type="radio" name="state" value="rejected" required />
+                    Rejected
                 </label>
-            </div>
-            <button type="submit">Submit</button>
+            </fieldset>
+
+            <button type="submit">Create notification</button>
         </form>
     </div>
+
     <script type="module" src="./js/2-snackbar.js"></script>
 </body>
 
